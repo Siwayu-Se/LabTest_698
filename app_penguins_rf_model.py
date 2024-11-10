@@ -11,7 +11,7 @@ st.set_page_config(page_title="Penguin Species Predictor", page_icon="🐧", lay
 background_image_url = "https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg"
 
 # Set desired colors
-text_color = "#FFA500"  # Text color
+text_color = "#CC0099"  # Text color
 result_bg_color = "#FFFAFA"  # Result background color
 
 # Apply CSS for background and text colors
