@@ -1,4 +1,3 @@
-
 # Import necessary libraries
 import streamlit as st
 import pickle
@@ -101,11 +100,11 @@ if st.sidebar.button("Predict Species"):
     )
 
     # Show species image in the center
-    species_image_path = f"images/{species.lower()}.jpg"  # Ensure images are in the 'images' directory
+    species_image_path = f"{species.lower()}.jpg"  # Using the image name directly (ensure the images are in the same folder)
     if os.path.exists(species_image_path):
         st.image(species_image_path, width=300, caption=f"{species} Penguin", use_column_width='auto')
     else:
-        st.warning(f"Image for {species} not found. Please ensure the image is in the 'images' folder.")
+        st.warning(f"Image for {species} not found. Please ensure the image is in the same folder as this script.")
 
     # Display characteristics with a result container
     st.markdown(
